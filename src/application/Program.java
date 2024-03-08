@@ -12,19 +12,24 @@ public class Program {
 
 		Scanner scanner = null;
 
-		try {
-			scanner = new Scanner(file);
-			while (scanner.hasNextLine()) {
-				System.out.println(scanner.nextLine());
-			}
-		} 
-		catch (IOException e) {
-			System.out.println("Error " + e.getMessage());
-		} 
-		finally {
-			if (scanner != null) {
-				scanner.close();
-			}
+		int lineNumber = 1;
+
+			try {
+				scanner = new Scanner(file);
+				while (scanner.hasNextLine()) {
+					System.out.println(scanner.nextLine());
+				}
+			} 
+			catch (IOException e) {
+				System.out.println("Error " + e.getMessage());
+			} 
+			finally {
+				if (scanner != null) {
+					scanner.close();
+				}
+
+			
+
 		}
 
 	}
