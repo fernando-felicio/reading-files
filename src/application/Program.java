@@ -17,7 +17,7 @@ public class Program {
 			try {
 				scanner = new Scanner(file);
 				while (scanner.hasNextLine()) {
-					System.out.println(lineNumber++ + " " + scanner.nextLine());
+					System.out.println(lineNumber + " " + scanner.nextLine());
 				}
 			} 
 			catch (IOException e) {
