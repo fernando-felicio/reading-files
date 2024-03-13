@@ -20,7 +20,7 @@ public class Program {
 					System.out.println(scanner.nextLine());
 				}
 			} 
-			catch (IOException e) {
+			catch (IOException e) {s
 				System.out.println("Error " + e.getMessage());
 			} 
 			finally {
