@@ -17,10 +17,10 @@ public class Program {
 			try {
 				scanner = new Scanner(file);
 				while (scanner.hasNextLine()) {
-					System.out.println(scanner.nextLine());
+					System.out.println(lineNumber++ + " " + scanner.nextLine());
 				}
 			} 
-			catch (IOException e) {s
+			catch (IOException e) {
 				System.out.println("Error " + e.getMessage());
 			} 
 			finally {
